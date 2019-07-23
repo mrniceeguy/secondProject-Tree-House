@@ -4,148 +4,166 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Tangerine"
-    />
-    <link
-      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+      href="https://fonts.googleapis.com/css?family=Lora&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Responsive Layout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
+    <title>Tech Degree Second Project</title>
   </head>
+
   <body>
-    <div class="wrap">
-      <header class="main-header">
-        <div class="container">
-          <h1 class="name"><a href="#">Piotr Skutnik</a></h1>
-          <ul class="main-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#portfolio">Porfolio</a></li>
-            <li><a href="#portfolio">Contact</a></li>
-          </ul>
-        </div>
-      </header>
-      <!-- Showcase section -->
-      <section id="showcase">
-        <div class="container">
-          <div class="home-section">
-              <div class="lead col">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                    accusamus, error veniam nisi sunt expedita similique iste, soluta
-                    alias omnis, nulla perferendis culpa illo quibusdam.
-                  </p>
-                </div>
-                <div class="col">
-                  <div class="portfolio-image">
-                    <img
-                      src="images/responsive-layout-profile.png"
-                      alt="Portfolio Image"
-                    />
-                  </div>
-                </div>
-          </div>
-        </div>
-      </section>
-      <!-- Portfolio section -->
-      <section id="portfolio">
-        <div class="container">
-          <h2>Portfolio</h2>
-          <div class="primary-section">
-            <div class="marketing-page1 group">
-              <img src="images/portfolio-1.png" alt="First Image" />
-              <h3>Marketing Page</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores voluptates reiciendis adipisci nihil vitae fugit.
-              </p>
-            </div>
-            <!--  -->
-            <div class="marketing-page2 group">
-              <img src="images/portfolio-2.png" alt="Second Image" />
-              <h3>Serch Page</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores voluptates reiciendis adipisci nihil vitae fugit.
-              </p>
-            </div>
-            <!--  -->
-            <div class="marketing-page3 group">
-              <img src="images/portfolio-3.png" alt="Third Image" />
-              <h3>Travel App</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores voluptates reiciendis adipisci nihil vitae fugit.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- </section> -->
-          <!--  -->
-          <!-- <section id="portfolio"> -->
-            <div class="container">
-            <div class="secondary-section group">
-              <div class="marketing-page4 group">
-                <img src="images/portfolio-4.png" alt="Fourth Image" />
-                <h3>Map of Favorite Sports</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores voluptates reiciendis adipisci nihil vitae fugit.
-                </p>
-              </div>
-              <!--  -->
-              <div class="marketing-page5 group">
-                <img src="images/portfolio-5.png" alt="Fifth Image" />
-                <h3>Photo Gallery</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores voluptates reiciendis adipisci nihil vitae fugit.
-                </p>
-              </div>
-              <!--  -->
-              <div class="marketing-page6 group">
-                <img src="images/portfolio-6.png" alt="Sixth Image" />
-                <h3>Calculator</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores voluptates reiciendis adipisci nihil vitae fugit.
-                </p>
-              </div>
-            </div>
-           </div>
-          </section>
-       </div>
-    
-    
-          
-      
-
-      <!-- Contact Section -->
-      <section id="contact">
-        <div class="container">
-          <h2>Contact Me</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-            voluptatem ab? Illo exercitationem non delectus?
-          </p>
-        </div>
-      </section>
-    </div>
-
-    <footer class="main-footer">
-      <div class="container">
-        <h1 class="footer-name"><a href="#">Piotr Skutnik</a></h1>
-        <ul class="footer-ul">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#portfolio">Porfolio</a></li>
+    <header>
+      <nav id="main-nav" class="clearfix">
+        <h1>Piotr Skutnik</h1>
+        <ul class="nav">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
 
-        <!-- <div class="back-top">
-          <a href="index.html">Back To Top</a>
-        </div> -->
+      <div class="main-section">
+        <img
+          src="images/responsive-layout-profile.png"
+          alt="Profile Image"
+          class="profile-image"
+        />
+        <aside class="profile-intro">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio
+            ratione molestias quo porro pariatur eligendi, obcaecati repellat
+            perferendis dolor eos, sunt tempora. Libero, incidunt!
+          </p>
+        </aside>
+      </div>
+    </header>
+    <!-- Main Section -->
+    <main class="clearfix container">
+      <h2 id="portfolio">Portfolio</h2>
+      <div class="project-1 col">
+        <img
+          src="images/portfolio-1.png"
+          alt="Picture of Marketing Page Project"
+        />
+        <h3>Marketing Page</h3>
+        <aside>
+          <p>
+            This project shows the font page of a marketing website meant for a
+            specific business I'm interested in.
+          </p>
+        </aside>
+      </div>
+      <!--  -->
+      <div class="project-2 col">
+        <img
+          src="images/portfolio-2.png"
+          alt="Picture of Search Page Project"
+        />
+        <h3>Search Page</h3>
+        <aside>
+          <p>
+            This project searches through specific database to find information
+            that the user is trying to look up.
+          </p>
+        </aside>
+      </div>
+      <!--  -->
+      <div class="project-3 col">
+        <img src="images/portfolio-3.png" alt="Picture of Travel App Project" />
+        <h3>Travel App</h3>
+        <aside>
+          <p>
+            This project compares travel times based on different transportation
+            methods and tells you the best one.
+          </p>
+        </aside>
+      </div>
+      <!--  -->
+      <div class="project-4 col">
+        <img
+          src="images/portfolio-4.png"
+          alt="Picture of Map of Favorite Spots Project"
+        />
+        <h3>Map of Favorite Spots</h3>
+        <aside>
+          <p>
+            This project uses mapping apis to plot points for my favorite spots
+            in the city for a do-it-yourself walking tour.
+          </p>
+        </aside>
+      </div>
+      <!--  -->
+      <div class="project-5 col">
+        <img
+          src="images/portfolio-5.png"
+          alt="Picture of Photo Gallery Project"
+        />
+        <h3>Photo Gallery</h3>
+        <aside>
+          <p>
+            This project shows pictures from a recent trip to the viewer and
+            allows them to easily navigate through photos.
+          </p>
+        </aside>
+      </div>
+      <!--  -->
+      <div class="project-6 col">
+        <img src="images/portfolio-6.png" alt="Picture of Calculator Project" />
+        <h3>Calculator</h3>
+        <aside>
+          <p>
+            Someone can enter in the numbers they want, and press the big blue
+            button and get the result.
+          </p>
+        </aside>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div id="contact-block" class="clearfix">
+        <div class="container">
+          <h3 id="contact">Contact</h3>
+          <aside>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              voluptatem perspiciatis totam laudantium aut similique fugit
+              dignissimos aspernatur suscipit temporibus.
+            </p>
+            <div id="contacts-mode">
+              <ul>
+                <li>
+                  <a href="#"></a
+                  ><i class="fas fa-phone-square-alt"> Phone </i>(773)085-1302
+                </li>
+                <li>
+                  <a href="#"></a><i class="fas fa-envelope-square"> Email</i>
+                  skutnik.p23@gmail.com
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <!--  -->
+        <hr />
+        <!-- Footer navbar -->
+        <nav id="mobile-nav">
+          <a href="#" id="student-name">Piotr Skutnik</a>
+          <a href="#top" id="back-to-top">Back to Top</a>
+        </nav>
+
+        <nav id="footer-nav" class="clearfix">
+          <h1>Piotr Skutnik</h1>
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </footer>
   </body>

@@ -1,0 +1,314 @@
+* {
+  font-family: 'Lora', serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:link {
+  color: inherit;
+}
+
+/* Navbar=====================*/
+
+header {
+  background-color: #ccc;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#main-nav {
+  width: 85%;
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 20px;
+  margin-top: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav li {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: bolder;
+  list-style-type: none;
+}
+
+.nav a {
+  display: block;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  padding: 10px 16px;
+  margin: 5px;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+/* End of navbar */
+
+/* Main Section */
+.container {
+  width: 85%;
+}
+
+img {
+  width: 100%;
+}
+
+.profile-image {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.profile-intro {
+  font-size: 1.1em;
+  max-width: 630px;
+}
+/* End of main Section */
+
+/* Main and Clear fix section */
+main {
+  width: 85%;
+  margin: 50px 0;
+}
+
+div {
+  text-align: center;
+  margin: 30px auto;
+  width: 90%;
+}
+
+#portfolio,
+#contact {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+#portfolio {
+  text-align: center;
+  font-size: 1em;
+}
+
+#contact,
+#contact-block {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+#contacts-mode {
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+#contacts-mode a {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+hr {
+  border: solid 0.5px black;
+  width: 450px;
+  /* padding-left: 4rem; */
+}
+
+/* Footer Section */
+#mobile-nav a {
+  display: inline;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #ccc;
+  padding: 30px 0;
+  margin-top: 4rem;
+}
+
+#footer-nav {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px;
+  display: none;
+}
+#footer-nav h1 {
+  padding-top: 18px;
+  margin: 0;
+}
+
+#footer-nav a {
+  text-decoration: none;
+}
+
+#back-to-top {
+  float: right;
+  padding-right: 17px;
+}
+
+#student-name {
+  float: left;
+  padding-left: 17px;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  /* Header section */
+  header {
+    padding-bottom: 80px;
+  }
+
+  h1 {
+    padding: 0px;
+  }
+
+  #main-nav li {
+    float: left;
+  }
+
+  ul {
+    display: inline-block;
+  }
+
+  .profile-image {
+    float: right;
+    width: 50%;
+  }
+
+  .profile-intro {
+    display: inline-block;
+    text-align: left;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 15px;
+  }
+  /* End of Header section */
+
+  main {
+    text-align: center;
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  main div {
+    min-height: 350px;
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  .col {
+    max-height: 380px;
+  }
+
+  main div aside {
+    max-height: 20px;
+  }
+
+  /* Footer layouts */
+  #contact-block {
+    font-size: 1.3em;
+  }
+
+  #mobile-nav {
+    display: none;
+  }
+
+  #footer-nav {
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+  }
+
+  #footer-nav h1 {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    font-size: 1.1em;
+  }
+
+  #footer-nav ul {
+    display: block;
+    float: right;
+  }
+
+  #footer-nav ul li {
+    float: left;
+    margin-right: 20px;
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding-bottom: 120px;
+  }
+
+  #main-nav h1 {
+    float: left;
+    display: block;
+    margin: 20px auto;
+    padding-left: 70px;
+    cursor: pointer;
+  }
+
+  .nav {
+    float: right;
+    margin: 20px auto;
+    padding-right: 20px;
+  }
+
+  #portfolio {
+    padding: 15px 0;
+    font-size: 1.3em;
+  }
+
+  main div {
+    width: 33%;
+  }
+
+  #footer-nav h1 {
+    margin-left: 30px;
+    font-size: 1.2em;
+  }
+
+  #footer-nav ul li {
+    margin-right: 30px;
+    font-size: 1.2em;
+  }
+}
+
+/* Clearfix */
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
